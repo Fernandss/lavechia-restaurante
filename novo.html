@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Lavechia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class='container-fluid p-2 bg-warning-subtle text-center'>
+        <nav class="navbar navbar-expand-lg bg-body-warning">
+            <h1  class="text-primary fs-3 text ">Restaurante Lavechia</h1> 
+
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cardapio</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img  src="imagens/FEIJOADA-MIN (1).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Venha experimentar nossa feijoada</h5>
+              </div>
+            </div>
+
+          </div>    
+    </header>
+    <section class="container-fluid bg-light text-center p-2">
+        <h2>Sobre nós</h2>
+        Somos apaixonados por comida brasileira e queremos compartilhar essa paixão com você. Em nosso restaurante, buscamos trazer os sabores autênticos do Brasil para sua mesa, com pratos preparados com ingredientes frescos e selecionados cuidadosamente. Nossa equipe é dedicada a proporcionar uma experiência gastronômica única, onde cada prato conta uma história e cada sabor desperta memórias. Valorizamos a tradição da culinária brasileira, ao mesmo tempo em que exploramos novas combinações e técnicas para surpreender seu paladar. Venha nos visitar e descubra o verdadeiro sabor do Brasil em cada garfada.
+        <br><br><hr>
+        <h4 class=" p-4">Venha conhecer nossas unidades, Espalhadas pelo Brasil.</h4>
+        <div class="row">
+            <figure class="col text-center">
+                <img src="imagens/Gramado.jpg" alt="Imagem de chale em Gramado">
+                <figcaption>Gramado</figcaption>
+            </figure>
+            <figure class="col text-center">
+                <img width="240"  src="imagens/pexels-photo-97906.jpeg" alt="Praia em Porto Seguro">
+                <figcaption>São Paulo</figcaption>
+            </figure>
+            <figure class="col text-center" tex>
+                <img src="imagens/rio_de_janeiro.jpg" alt="Rio de janeiro visto de cima">
+                <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+        </div>
+    </section >
+    <section class="container-fluid bg-warning-subtle text-center p-2" >
+        <h2>Cardapio</h2>
+        <table class="table table-hover table-bordered border-warning">
+            <caption>*Nossos pratos e respectivos valores</caption>
+            <thead class="table-secondary">
+                <tr>
+                    <th>Nossas pratos</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <td>Churrasco </td>
+                    <td>R$80,00</td>
+                </tr>
+                <tr>
+                    <td>Frango à Passarinho </td>
+                    <td>R$50,00</td>
+                </tr>
+                <tr>
+                    <td>Filé à Parmegiana </td>
+                    <td>R$30 </td>
+                </tr>
+                <tr>
+                    <td>Porção de Pasteis </td>
+                    <td>R$40,00</td>
+                </tr>
+                <tr>
+                    <td> File Mignon</td>
+                    <td>R$99,00</td>
+                </tr>
+                <tr>
+                    <td>Venha conhecer mais do nosso cardápio </td>
+                    <td>...</td>
+                </tr>
+                
+            </tbody>
+        </table>    
+    </section>
+    <section class="container-fluid bg-light p-2">
+        <h2 class="text-center p-4">Faça a reserva da sua mesa</h2>
+        <form action="GET">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="mb-03">
+                    <label class="form-label" for = "nome">
+                        Nome: 
+                    </label>
+                    <input type="text" class="form-control" name="nome" id="nome">
+                </div>
+                <div class="mb-03">
+                    <label class="form-label" for = "email">
+                        Email: 
+                    </label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="email@exempli.com" required>
+                </div>
+                <div class="mb-03">
+                    <label class="form-label" for = "dataIda">
+                        Escolha uma data: 
+                    </label>
+                    <input type="date" class="form-control" name="dataVolta" id="dataVolta">
+                </div> 
+                <div class="mb-03">
+                    <label class="form-label" for="quantidade_pessoas">
+                        Quantidade de pessoas que vão: 
+                    </label>
+                    <input type="number" class="form-control" name="quantidade_pessoas" id="quantidade_pessoas" placeholder="Digite a quantidade" required>
+                </div> 
+                <div class="mb-03">
+                    <label class="form-label" for="email">
+                        Email: 
+                    </label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="email@exempli.com" required>
+                </div>  
+                
+                <div class="mb-03">
+                    <label class="form-label" for="unidade">
+                        Unidade que vão: 
+                    </label>
+                    <select class="form-control" name="unidade" id="unidade" required>
+                        <option value="" disabled selected>Selecione a unidade</option>
+                        <option value="Gramado">Gramado</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="São Paulo">São Paulo</option>
+                    </select>
+                </div>
+                <button class="btn btn-secondary m-3">Salvar</button>
+                
+                
+            </fieldset>
+            <br>
+
+</body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>   
+
+</html>
